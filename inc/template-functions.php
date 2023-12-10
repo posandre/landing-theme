@@ -39,7 +39,7 @@ add_action( 'wp_head', 'landing_theme_pingback_header' );
 /**
  *  Get Acf field value
  */
-function landing_theme_get_acf_field($selector,  $post_id, $default = '') {
+function landing_theme_get_acf_field($selector,  $post_id = 0, $default = '') {
     if (empty($post_id)) $post_id = get_the_ID();
 
     if( !class_exists('ACF') ) return $default;
