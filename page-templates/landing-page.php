@@ -17,19 +17,22 @@ get_header();
         $i = 1;
 
         foreach ($anchor_navigation_items as $anchor_navigation_item) :
-            $section_type = str_replace('_', '-', $anchor_navigation_item['section_type']); ?>
+            $section_type = str_replace('_', '-', $anchor_navigation_item['section_type']);
 
-            <section id="section-<?php echo $i; ?>" class="<?php echo $section_type; ?>">
-	        <?php
-            get_template_part(
-                    'template-parts/landing-page/section',
-                    $section_type,
-                    array(
-                            'data'  =>  $anchor_navigation_item
-                    )
-            );
+            if (!$anchor_navigation_item['hide_section']) : ?>
+                <section id="section-<?php echo $i; ?>" class="<?php echo $section_type; ?>">
+                <?php
+                get_template_part(
+                        'template-parts/landing-page/section',
+                        $section_type,
+                        array(
+                                'data'  =>  $anchor_navigation_item
+                        )
+                );
 
-            $i++;
+                $i++;
+
+            endif;
             ?>
             </section>
     <?php
