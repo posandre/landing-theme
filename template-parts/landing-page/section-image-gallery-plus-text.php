@@ -1,5 +1,39 @@
 <?php
-$section_data = $args['data'];
+$section_data = $args['data']['image_gallery_plus_text'];
+
+if (empty($section_data)) return;
 ?>
 
-<?php print_r($section_data); ?>
+<div class="section-image-gallery-plus-text__container container">
+	<div class="section-image-gallery-plus-text__col">
+		<?php if (!empty($section_data['title'])) : ?>
+			<div class="section-image-gallery-plus-text__title"><?php echo $section_data['title']; ?></div>
+		<?php endif; ?>
+
+		<?php if (!empty($section_data['description'])) : ?>
+			<div class="section-image-gallery-plus-text__description">
+				<?php echo apply_filters( 'the_content',$section_data['description']); ?>
+			</div>
+		<?php endif; ?>
+	</div>
+	<div class="section-image-gallery-plus-text__col">
+		<?php if (!empty($section_data['images'])) : ?>
+		<div class="section-image-gallery-plus-text__images landing-theme__slider owl-carousel">
+			<?php
+			$i = 1;
+			foreach ($section_data['images'] as $image) :
+				landing_theme_the_attachment_image(
+					$image,
+					'image_gallery_plus_text_img',
+					__('Image gallery + Text - ', 'landing theme') . $i,
+					'section-image-gallery-plus-text__img',
+					'gallery-no-image.jpg'
+				);
+				$i++;
+			endforeach;
+			?>
+		</div>
+
+		<?php endif; ?>
+	</div>
+</div>
