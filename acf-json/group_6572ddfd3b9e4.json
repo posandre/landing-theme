@@ -46,35 +46,6 @@
                     "parent_repeater": "field_6572ddfd9dab0"
                 },
                 {
-                    "key": "field_6574c41cb667a",
-                    "label": "Section ID",
-                    "name": "section_id",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_6572e05803fe9",
-                                "operator": "!=",
-                                "value": "1"
-                            }
-                        ]
-                    ],
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_6572ddfd9dab0"
-                },
-                {
                     "key": "field_6572ded403fe5",
                     "label": "Section type",
                     "name": "section_type",
@@ -351,8 +322,8 @@
                         },
                         {
                             "key": "field_6572e4f7cf71e",
-                            "label": "",
-                            "name": "",
+                            "label": "Image",
+                            "name": "image",
                             "aria-label": "",
                             "type": "image",
                             "instructions": "",
@@ -891,5 +862,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1702152472
+    "modified": 1702239113
 }
