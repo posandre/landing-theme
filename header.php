@@ -23,4 +23,9 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div class="landing-theme">
-	<header class="landing-theme__header"></header>
+	<header class="landing-theme__header">
+        <div class="landing-theme__container">
+        <?php if (is_page_template('page-templates/landing-page.php'))
+	        get_template_part( 'template-parts/landing-page/section', 'anchor-menu' ); ?>
+        </div>
+    </header>
