@@ -9,6 +9,11 @@
  * @package landing_theme
  */
 
+$header_classes = array('landing-theme__header');
+
+if (!empty(landing_theme_get_acf_field('anchor_navigation_items')))
+	$header_classes[] = 'landing-theme__header--with-anchor-menu';
+
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -23,9 +28,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div class="landing-theme">
-	<header class="landing-theme__header">
-        <div class="landing-theme__container">
+	<header class="<?php echo implode(' ', $header_classes); ?>">
         <?php if (is_page_template('page-templates/landing-page.php'))
 	        get_template_part( 'template-parts/landing-page/section', 'anchor-menu' ); ?>
-        </div>
     </header>
