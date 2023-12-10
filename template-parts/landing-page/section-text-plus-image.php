@@ -1,6 +1,8 @@
 <?php
 $section_data = $args['data']['text_plus_image'];
 
+if (empty($section_data)) return;
+
 $img_alt = empty($section_data['title'])
     ? __('Text plus image img', 'landing-theme')
     : $section_data['title'];
