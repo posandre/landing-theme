@@ -58,22 +58,23 @@ function landing_theme_get_image_url($image_name) {
     return esc_attr(get_stylesheet_directory_uri() . '/images/' . $image_name);
 }
 
-
 /**
- *  Get picture section
+ * Get attachment image
  */
-function landing_theme_the_picture_section($image_name, $image_name_mob, $alt_text = '') {
-    if (
-        !empty($image_name) && file_exists(get_stylesheet_directory()  . '/images/' . $image_name) &&
-        !empty($image_name_mob) && file_exists(get_stylesheet_directory()  . '/images/' . $image_name_mob)
-    ) {
-        echo '
-        <picture>
-            <source media="(max-width: 1267px)" srcset="' . landing_theme_get_image_url($image_name_mob) . '">
-            <img src="' . landing_theme_get_image_url($image_name) . '" alt="' . esc_attr($alt_text) . '" />
-        </picture>        
-        ';
-    } else {
-        echo '';
-    }
+function landing_theme_the_attachment_image($image_id, $image_size, $image_alt, $image_class, $default_image) {
+	$image = wp_get_attachment_image(
+		$image_id,
+		$image_size,
+		false,
+		array(
+			'class' =>  $image_class,
+			'alt'   =>  $image_alt
+		)
+	);
+
+	if (isset($image)) {
+		echo $image;
+	} else {
+		echo '<img alt="' .$image_alt. '" class="' .$image_class. '" src="' .landing_theme_get_image_url($default_image). ' />';
+	}
 }
