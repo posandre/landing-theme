@@ -8,9 +8,14 @@
   min-width: 165px;
 
   border: 1px solid $secondary_button_border_color;
+  border-radius: 4px;
 
   &, &:visited, &:focus, &:active {
     color: $secondary_button_font_color;
+  }
+
+  &:hover {
+    transform: scale(1.05);
   }
 }
 
