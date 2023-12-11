@@ -1,4 +1,6 @@
 jQuery(document).ready(function($) {
+    new WOW().init();
+
     $(document).on('click', 'a[href^="#"]', function (event) {
         event.preventDefault();
 

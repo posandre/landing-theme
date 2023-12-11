@@ -2,6 +2,8 @@
 $section_data = $args['data']['column_card_2_3'];
 
 if (empty($section_data)) return;
+
+$i =1;
 ?>
 
 <div class="column-card-2-3__container container">
@@ -12,7 +14,7 @@ if (empty($section_data)) return;
 	<?php if (!empty($section_data['cards'])) : ?>
     <div class="column-card-2-3__cards">
         <?php foreach ($section_data['cards'] as $card) : ?>
-        <div class="column-card-2-3__card">
+        <div class="column-card-2-3__card wow bounceInUp" data-wow-delay="<?php echo $i; ?>s" data-wow-duration="2s">
 	        <?php if (!empty($card['image'] && !in_array('hide_image', $card['hide_card_content']))) :
 		        $img_alt = empty($card['title'])
 			        ? __('2-3-column-card img', 'landing-theme')
@@ -26,7 +28,7 @@ if (empty($section_data)) return;
 		                'cards-no-image.jpg'
 	                ); ?>
                 </div>
-	        <?php endif; ?>
+	        <?php $i +=0.5; endif; ?>
 
 	        <?php if (!empty($card['title'] && !in_array('hide_title', $card['hide_card_content']))) :?>
                 <div class="column-card-2-3__card-title column-card-2-3__card-title--<?php echo $card['title_style']; ?>">
