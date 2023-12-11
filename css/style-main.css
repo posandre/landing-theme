@@ -451,7 +451,7 @@ a {
   a:hover {
     color: #310255;
     text-decoration: none;
-    transform: scale(1.1); }
+    transform: scale(1.05); }
   a:focus {
     outline: thin dotted; }
 
@@ -2932,15 +2932,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   font-size: 12px;
   text-transform: uppercase;
   text-align: center;
-  color: #424B5A;
   padding: 13px 16px;
   min-width: 165px;
   border: 1px solid #310255; }
+  .btn, .btn:visited, .btn:focus, .btn:active {
+    color: #424B5A; }
 
 .btn--primary {
-  color: white;
   background-color: #310255;
   border-color: #310255; }
+  .btn--primary, .btn--primary:visited, .btn--primary:focus, .btn--primary:active {
+    color: white; }
 
 body {
   font-family: Ubuntu, serif;
@@ -2956,6 +2958,16 @@ body {
 .container {
   width: 1141px;
   margin: 0 auto; }
+
+h1, h2, h3, h4, h5 {
+  color: #505D68; }
+
+h2 {
+  color: #505D68;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 128%;
+  margin-top: 0; }
 
 .landing-theme__header--with-anchor-menu {
   padding: 24px 0 23px 0;
@@ -2978,3 +2990,26 @@ body {
     font-size: 12px;
     color: #505D68;
     text-transform: uppercase; }
+
+.text-plus-image {
+  padding-bottom: 123px; }
+  .text-plus-image__container {
+    display: flex;
+    gap: 29px; }
+    .text-plus-image__container--image-right {
+      flex-direction: row-reverse; }
+  .text-plus-image__col {
+    max-width: 50%;
+    flex: 0 0 0 50%; }
+    .text-plus-image__col--content {
+      padding: 0 97px 20px 30px; }
+  .text-plus-image__description {
+    max-width: 428px;
+    padding-bottom: 57px; }
+  .text-plus-image__buttons .btn {
+    margin-right: 30px; }
+    .text-plus-image__buttons .btn:last-child {
+      margin-right: 0; }
+
+.page-template-landing-page .landing-theme__wrapper {
+  padding: 79px 0 38px 0; }

@@ -1,3 +1,37 @@
-.section-text-plus-image {
+.text-plus-image {
+  padding-bottom: 123px;
 
+  &__container {
+    display: flex;
+    gap: 29px;
+
+    &--image-right {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__col {
+    max-width: 50%;
+    flex: 0 0 0 50%;
+
+    &--content {
+      padding: 0 97px 20px 30px;
+    }
+  }
+
+  &__description {
+    max-width: 428px;
+
+    padding-bottom: 57px;
+  }
+
+  &__buttons {
+    .btn {
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
 }
