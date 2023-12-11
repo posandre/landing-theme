@@ -8,10 +8,13 @@ jQuery(document).ready(function($) {
     });
 
     $('.owl-carousel').owlCarousel({
-        loop:true,
         autoplay: true,
-        margin:15,
+        margin:30,
+        lazyLoad: true,
+
         nav:true,
+        navText:[],
+
         responsive:{
             0:{
                 items:1
