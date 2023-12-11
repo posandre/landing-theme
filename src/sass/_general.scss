@@ -17,6 +17,11 @@ body {
   margin: 0 auto;
 
   padding: 0 15px;
+
+  @media (max-width: $desktop_small_max) {
+    width: 100%;
+    max-width: 780px;
+  }
 }
 
 h1, h2, h3, h4, h5 {
@@ -31,5 +36,9 @@ h2 {
   line-height: 128%;
 
   margin-top: 0;
+
+  @media (max-width:$tablet_max) {
+    font-size: 40px;
+  }
 }
 

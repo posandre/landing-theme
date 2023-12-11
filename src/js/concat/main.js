@@ -19,9 +19,15 @@ jQuery(document).ready(function($) {
 
         responsive:{
             0:{
-                items:1
+                items:1,
+                dots: false,
+                margin:15,
             },
-            1000:{
+            870: {
+                items:1,
+                dots: false
+            },
+            1170:{
                 items:2
             }
         }

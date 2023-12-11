@@ -1,8 +1,10 @@
-$desktop_small : 1441px !default;
-$tablet: 768px !default;
+$desktop_small : 1171px !default;
+$tablet: 870px !default;
 $mobile: 576px !default;
+$mobile_small: 576px !default;
 
 
 $desktop_small_max : ($desktop_small - 1) !default;
 $tablet_max: ($tablet - 1) !default;
 $mobile_max: ($mobile - 1) !default;
+$mobile_small_max: ($mobile_small - 1) !default;

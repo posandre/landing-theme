@@ -7,12 +7,32 @@
     display: flex;
 
     gap: 29px;
+
+    background-color: white;
+
+    @media (max-width: $tablet_max) {
+      flex-wrap: wrap;
+    }
   }
 
   &__col {
+
     &--text {
       max-width: 263px;
       flex: 0 0 263px;
+
+      @media (max-width: $tablet_max) {
+        max-width: 100%;
+        flex: 0 0 100%;
+      }
+    }
+
+    &--gallery {
+        width: calc(100% - 263px);
+
+      @media (max-width: $tablet_max) {
+        width: 100%;
+      }
     }
   }
 
@@ -22,6 +42,10 @@
       line-height: 126.316%;
 
       margin-bottom: 37px;
+
+      @media (max-width: $tablet_max) {
+        text-align: center;
+      }
     }
   }
 
@@ -34,10 +58,19 @@
     &-carousel {
       width: 1038px;
 
+      @media (max-width: $desktop_small_max) {
+        width: 100%;
+      }
+
       .owl-item img {
         width: 504px;
         max-width: 504px;
         height: auto;
+
+        @media (max-width: $desktop_small_max) {
+          width: 100%;
+          max-width: 100%;
+        }
       }
     }
 
@@ -45,6 +78,16 @@
       position: absolute;
       left: -293px;
       bottom: 0;
+
+      @media (max-width: $tablet_max) {
+        position: relative;
+        left: unset;
+        bottom: unset;
+
+        text-align: center;
+
+        margin-top: 20px;
+      }
 
       button {
         width: 24px;
@@ -54,6 +97,11 @@
         background-position: center center;
         background-size: contain;
 
+        @media (max-width: $tablet_max) {
+          width: 48px;
+          height: 48px;
+        }
+
         &.disabled {
           opacity: 30%;
         }
@@ -61,6 +109,10 @@
     }
 
     &-dots {
+
+      @media (max-width: $tablet_max) {
+        text-align: center;
+      }
 
       button {
         width: 10px;
@@ -92,6 +144,10 @@
       transform: rotate(180deg);
 
       margin-left: 8px;
+
+      @media (max-width: $tablet_max) {
+        margin-left: 30px;
+      }
     }
   }
 }

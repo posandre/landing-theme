@@ -15,6 +15,10 @@
   &__title {
     padding-right: 21px;
     cursor: default;
+
+    @media (max-width:$tablet_max) {
+      display: none;
+    }
   }
 
   &__items {
@@ -26,6 +30,14 @@
     list-style-type: none;
 
     padding: 0 21px;
+
+    @media (max-width:$tablet_max) {
+      padding: 0 10px;
+    }
+
+    @media (max-width:$mobile_max) {
+      padding: 0 5px;
+    }
   }
 
   &__title, &__link {
