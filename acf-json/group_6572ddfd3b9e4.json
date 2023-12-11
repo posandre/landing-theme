@@ -69,7 +69,7 @@
                     },
                     "choices": {
                         "text_plus_image": "Text + Image",
-                        "2_3_column_card": "2\/3 Column Card",
+                        "column_card_2_3": "2\/3 Column Card",
                         "image_gallery_plus_text": "Image gallery \u2028+ Text"
                     },
                     "default_value": "text_plus_image",
@@ -351,7 +351,7 @@
                 {
                     "key": "field_6572e00e03fe7",
                     "label": "",
-                    "name": "2_3_column_card",
+                    "name": "column_card_2_3",
                     "aria-label": "",
                     "type": "group",
                     "instructions": "",
@@ -366,7 +366,7 @@
                             {
                                 "field": "field_6572ded403fe5",
                                 "operator": "==",
-                                "value": "2_3_column_card"
+                                "value": "column_card_2_3"
                             }
                         ]
                     ],
@@ -862,5 +862,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1702239113
+    "modified": 1702287917
 }
