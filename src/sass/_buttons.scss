@@ -1,0 +1,30 @@
+.btn {
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+
+  padding: 13px 16px;
+
+  min-width: 165px;
+
+  border: 1px solid $secondary_button_border_color;
+  border-radius: 4px;
+
+  &, &:visited, &:focus, &:active {
+    color: $secondary_button_font_color;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.btn--primary {
+  background-color: $primary_button_background_color;
+
+  border-color: $primary_button_border_color;
+
+  &, &:visited, &:focus, &:active {
+    color: $primary_button_font_color;
+  }
+}

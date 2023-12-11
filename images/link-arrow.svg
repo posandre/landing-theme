@@ -1,0 +1,57 @@
+<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="15" height="14" fill="#1E1E1E"/>
+<g id="Flexible" clip-path="url(#clip0_0_1)">
+<rect width="1440" height="2251" transform="translate(-269 -1662)" fill="white"/>
+<g id="Column Card - 3 Col View" clip-path="url(#clip1_0_1)">
+<g id="#4" clip-path="url(#clip2_0_1)">
+<g id="Card" clip-path="url(#clip3_0_1)">
+<rect id="Rectangle 4" x="-118.5" y="-373" width="360" height="432" rx="2" fill="white"/>
+</g>
+<g id="Border" clip-path="url(#clip4_0_1)">
+<path id="Mask" fill-rule="evenodd" clip-rule="evenodd" d="M-116.5 -373C-117.605 -373 -118.5 -372.105 -118.5 -371V57C-118.5 58.1046 -117.605 59 -116.5 59H239.5C240.605 59 241.5 58.1046 241.5 57V-371C241.5 -372.105 240.605 -373 239.5 -373H-116.5ZM-117.5 -370C-117.5 -371.105 -116.605 -372 -115.5 -372H238.5C239.605 -372 240.5 -371.105 240.5 -370V56C240.5 57.1046 239.605 58 238.5 58H-115.5C-116.605 58 -117.5 57.1046 -117.5 56V-370Z" fill="#C2D1D9"/>
+<mask id="mask0_0_1" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-119" y="-373" width="361" height="432">
+<path id="Mask_2" fill-rule="evenodd" clip-rule="evenodd" d="M-116.5 -373C-117.605 -373 -118.5 -372.105 -118.5 -371V57C-118.5 58.1046 -117.605 59 -116.5 59H239.5C240.605 59 241.5 58.1046 241.5 57V-371C241.5 -372.105 240.605 -373 239.5 -373H-116.5ZM-117.5 -370C-117.5 -371.105 -116.605 -372 -115.5 -372H238.5C239.605 -372 240.5 -371.105 240.5 -370V56C240.5 57.1046 239.605 58 238.5 58H-115.5C-116.605 58 -117.5 57.1046 -117.5 56V-370Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_0_1)">
+<g id="Color">
+<rect id="Atoms / Colors / Black" x="-118.5" y="-373" width="360" height="432" fill="#C2D1D9"/>
+</g>
+</g>
+</g>
+<g id="Link" clip-path="url(#clip5_0_1)">
+<g id="icon">
+<path id="Mask_3" fill-rule="evenodd" clip-rule="evenodd" d="M8.0878 0.921015C7.76319 0.596402 7.23689 0.596402 6.91228 0.921015C6.58787 1.24542 6.58764 1.77132 6.91175 2.09601L10.975 6.16659H1.66671C1.20647 6.16659 0.833374 6.53968 0.833374 6.99992C0.833374 7.46016 1.20647 7.83325 1.66671 7.83325H10.975L6.91175 11.9038C6.58764 12.2285 6.58787 12.7544 6.91228 13.0788C7.23689 13.4034 7.76319 13.4034 8.0878 13.0788L14.1667 6.99992L8.0878 0.921015Z" fill="black" fill-opacity="0.7"/>
+<mask id="mask1_0_1" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="14">
+<path id="Mask_4" fill-rule="evenodd" clip-rule="evenodd" d="M8.0878 0.921015C7.76319 0.596402 7.23689 0.596402 6.91228 0.921015C6.58787 1.24542 6.58764 1.77132 6.91175 2.09601L10.975 6.16659H1.66671C1.20647 6.16659 0.833374 6.53968 0.833374 6.99992C0.833374 7.46016 1.20647 7.83325 1.66671 7.83325H10.975L6.91175 11.9038C6.58764 12.2285 6.58787 12.7544 6.91228 13.0788C7.23689 13.4034 7.76319 13.4034 8.0878 13.0788L14.1667 6.99992L8.0878 0.921015Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_0_1)">
+<g id="&#226;&#134;&#170;&#240;&#159;&#142;&#168;">
+<rect id="Rectangle 5" x="-2.5" y="-3" width="20" height="20" fill="#310255"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1440" height="2251" fill="white" transform="translate(-269 -1662)"/>
+</clipPath>
+<clipPath id="clip1_0_1">
+<rect width="1140.5" height="1035" fill="white" transform="translate(-119 -976)"/>
+</clipPath>
+<clipPath id="clip2_0_1">
+<rect width="360" height="432" fill="white" transform="translate(-118.5 -373)"/>
+</clipPath>
+<clipPath id="clip3_0_1">
+<rect width="360" height="432" fill="white" transform="translate(-118.5 -373)"/>
+</clipPath>
+<clipPath id="clip4_0_1">
+<rect width="360" height="432" fill="white" transform="translate(-118.5 -373)"/>
+</clipPath>
+<clipPath id="clip5_0_1">
+<rect width="100" height="20" fill="white" transform="translate(-82.5 -3)"/>
+</clipPath>
+</defs>
+</svg>
