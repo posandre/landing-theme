@@ -2933,9 +2933,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   text-align: center;
   padding: 13px 16px;
   min-width: 165px;
-  border: 1px solid #310255; }
+  border: 1px solid #310255;
+  border-radius: 4px; }
   .btn, .btn:visited, .btn:focus, .btn:active {
     color: #424B5A; }
+  .btn:hover {
+    transform: scale(1.05); }
 
 .btn--primary {
   background-color: #310255;
@@ -2955,8 +2958,9 @@ body {
       font-size: 14px; } }
 
 .container {
-  width: 1141px;
-  margin: 0 auto; }
+  width: 1171px;
+  margin: 0 auto;
+  padding: 0 15px; }
 
 h1, h2, h3, h4, h5 {
   color: #505D68; }
