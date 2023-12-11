@@ -20,7 +20,7 @@ get_header();
             $section_type = str_replace('_', '-', $anchor_navigation_item['section_type']);
 
             if (!$anchor_navigation_item['hide_section']) : ?>
-                <section id="section-<?php echo $i; ?>" class="<?php echo $section_type; ?>">
+                <section id="section-<?php echo $i; ?>" class="landing-theme__section <?php echo $section_type; ?>">
                 <?php
                 get_template_part(
                         'template-parts/landing-page/section',
