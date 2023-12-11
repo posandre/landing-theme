@@ -4,21 +4,21 @@ $section_data = $args['data']['image_gallery_plus_text'];
 if (empty($section_data)) return;
 ?>
 
-<div class="section-image-gallery-plus-text__container container">
-	<div class="section-image-gallery-plus-text__col">
+<div class="image-gallery-plus-text__container container">
+	<div class="image-gallery-plus-text__col image-gallery-plus-text__col--text">
 		<?php if (!empty($section_data['title'])) : ?>
-            <div class="section-image-gallery-plus-text__title"><h2><?php echo $section_data['title']; ?></h2></div>
+            <div class="image-gallery-plus-text__title"><h2><?php echo $section_data['title']; ?></h2></div>
 		<?php endif; ?>
 
 		<?php if (!empty($section_data['description'])) : ?>
-			<div class="section-image-gallery-plus-text__description">
+			<div class="image-gallery-plus-text__description">
 				<?php echo apply_filters( 'the_content',$section_data['description']); ?>
 			</div>
 		<?php endif; ?>
 	</div>
-	<div class="section-image-gallery-plus-text__col">
+	<div class="image-gallery-plus-text__col image-gallery-plus-text__col--gallery">
 		<?php if (!empty($section_data['images'])) : ?>
-		<div class="section-image-gallery-plus-text__images landing-theme__slider owl-carousel">
+		<div class="image-gallery-plus-text__images owl-carousel">
 			<?php
 			$i = 1;
 			foreach ($section_data['images'] as $image) :
@@ -26,7 +26,7 @@ if (empty($section_data)) return;
 					$image,
 					'image_gallery_plus_text_img',
 					__('Image gallery + Text - ', 'landing theme') . $i,
-					'section-image-gallery-plus-text__img',
+					'image-gallery-plus-text__img',
 					'gallery-no-image.jpg'
 				);
 				$i++;
