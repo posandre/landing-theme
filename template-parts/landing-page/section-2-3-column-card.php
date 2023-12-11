@@ -6,7 +6,7 @@ if (empty($section_data)) return;
 
 <div class="2-3-column-card__container container">
     <?php if (!empty($section_data['title'])) : ?>
-    <div class="2-3-column-card__title"><?php echo $section_data['title']; ?></div>
+        <div class="2-3-column-card__title"><h2><?php echo $section_data['title']; ?></h2></div>
     <?php endif; ?>
 
 	<?php if (!empty($section_data['cards'])) : ?>

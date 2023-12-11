@@ -7,7 +7,7 @@ if (empty($section_data)) return;
 <div class="section-image-gallery-plus-text__container container">
 	<div class="section-image-gallery-plus-text__col">
 		<?php if (!empty($section_data['title'])) : ?>
-			<div class="section-image-gallery-plus-text__title"><?php echo $section_data['title']; ?></div>
+            <div class="section-image-gallery-plus-text__title"><h2><?php echo $section_data['title']; ?></h2></div>
 		<?php endif; ?>
 
 		<?php if (!empty($section_data['description'])) : ?>

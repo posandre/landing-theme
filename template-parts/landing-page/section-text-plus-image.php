@@ -15,9 +15,9 @@ $section_classes = array(
 ?>
 
 <div class="<?php echo implode(' ', $section_classes); ?>">
-    <div class="text-plus-image__col">
+    <div class="text-plus-image__col text-plus-image__col--content">
         <?php if (!empty($section_data['title'])) : ?>
-        <div class="text-plus-image__title"><?php echo $section_data['title']; ?></div>
+            <div class="text-plus-image__title"><h2><?php echo $section_data['title']; ?></h2></div>
         <?php endif; ?>
 
 	    <?php if (!empty($section_data['description'])) : ?>
@@ -35,7 +35,7 @@ $section_classes = array(
 
 	    <?php endif; ?>
     </div>
-    <div class="text-plus-image__col">
+    <div class="text-plus-image__col text-plus-image__col--image">
         <?php  landing_theme_the_attachment_image(
                 $section_data['image'],
                 'text_plus_image_img',
