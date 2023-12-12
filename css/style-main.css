@@ -2943,7 +2943,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .btn--primary {
   background-color: #310255;
   border-color: #310255; }
-  .btn--primary, .btn--primary:visited, .btn--primary:focus, .btn--primary:active {
+  .btn--primary, .btn--primary:visited, .btn--primary:focus, .btn--primary:active, .btn--primary:hover {
     color: white; }
 
 body {
