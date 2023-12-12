@@ -24,7 +24,7 @@
 
   border-color: $primary_button_border_color;
 
-  &, &:visited, &:focus, &:active {
+  &, &:visited, &:focus, &:active, &:hover {
     color: $primary_button_font_color;
   }
 }
