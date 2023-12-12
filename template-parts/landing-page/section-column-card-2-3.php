@@ -14,7 +14,7 @@ $i =1;
 	<?php if (!empty($section_data['cards'])) : ?>
     <div class="column-card-2-3__cards">
         <?php foreach ($section_data['cards'] as $card) : ?>
-        <div class="column-card-2-3__card wow bounceInUp" data-wow-delay="<?php echo $i; ?>s" data-wow-duration="2s">
+        <div class="column-card-2-3__card wow bounceInUp" data-wow-delay="<?php echo $i; ?>s" data-wow-duration="2s" style="visibility: hidden;">
 	        <?php if (!empty($card['image'] && !in_array('hide_image', $card['hide_card_content']))) :
 		        $img_alt = empty($card['title'])
 			        ? __('2-3-column-card img', 'landing-theme')
